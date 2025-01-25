@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px; /* responsividade */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* largura relativa */
+    max-width: 600px; /* Largura máxima */
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    background-color: #bd2d2d;
+    color: rgb(7, 7, 7);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition-duration: 0.4s;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.message {
+    margin-top: 10px;
+    text-align: center;
+    color: red;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; /* Reduz para tela menores */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Ajusta o tamanho da fonte */
+    }
+
+    button {
+        font-size: 14px; /* Fonte menor pros botões */
+    }
+}

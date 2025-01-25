@@ -1,0 +1,510 @@
+body {
+  height: 100%;
+    margin: 0;
+    overflow: hidden; /* Evita barras de rolagem desnecessárias */
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw; /* 90% da largura da tela */
+  max-width: 400px; /* Limite máximo para telas grandes */
+  background-color: rgba(88, 83, 83, 0.5);
+  border-radius: 10px;
+  border: 1px solid #080808;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);    
+   
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.h1 {
+    font-size: 2em;
+    color: chartreuse;
+    text-align: center;
+}
+.input-box {
+    display: flex; flex-direction: column;
+    
+}
+.btn {
+    background: rgb(20, 29, 29);
+    transition-duration: 0.4s;
+    color: rgb(0, 0, 0);
+    
+    -webkit-box-reflect: below 1px linear-gradient(trasparent, #0005);
+    background-color: #05f4f436;
+}
+
+
+body, html {
+height: 100%;
+margin: 0%;
+}
+
+.Click {
+color: rgb(23, 66, 206);
+}
+
+.inicio{
+    text-shadow: 2px 2px 4px rgba(38, 161, 135, 0.938);
+    color: #fcfcfc;
+    margin-top: 20px;
+    
+}
+
+img{
+    margin: 20px;
+}
+
+.input-bordas{
+    border-radius: 5px;
+    background-color: transparent;
+    border-color: #03e9f4;
+    color: #03e9f4;
+}
+
+.btnEntrar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 20px;    
+}
+
+.link-tex{
+    font-family: fantasy;
+}
+
+.link-text{
+    font-family: fantasy;
+}
+
+.rodape{
+    justify-content: center;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    transition-duration: 0.4s;
+    
+    
+    
+}
+
+a:link{    
+    text-decoration: none;
+}
+
+.buttonrodape{
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to right, #05f4f4, #009688);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  background: linear-gradient(to right, #009688, #05f4f4);
+
+}
+
+.login{
+    color: #ffffff;
+    
+}
+
+.senha{
+    color: #ffffff;
+    
+}
+
+.link-tex{
+    color: aliceblue;
+    
+}
+
+.clique{
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(38, 161, 135, 0.938);
+}
+
+.Click{
+    color: #00d8cd;
+}
+
+.criar{
+    color: #00d8cd;
+}
+
+/* inicio dos inputs login e senha */ 
+/* From Uiverse.io by mrhyddenn */ 
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #d0d5fa;
+    pointer-events: none;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #116399, #38caef);
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #38caef;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+
+  .nome-login{
+    color: #00af0f;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  /* inicio do papel de parede animação */
+  
+  .cube-top {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background: hsl(330, 3.13%, 25.1%) 0%;
+                        /* width 75px / 2 = 37.5px */
+    transform: rotateX(90deg) translateZ(37.5px);
+    transform-style: preserve-3d;
+  }
+  
+  .cube-top::before {
+    content: '';
+    position: absolute;
+  /* u can choose any size */
+    width: 75px;
+    height: 75px;
+    background: hsl(176.61, 42.28%, 40.7%) 19.6%;
+    transform: translateZ(-90px);
+    filter: blur(10px);
+    box-shadow: 0 0 10px #323232,
+                0 0 20px hsl(176.61, 42.28%, 40.7%) 19.6%,
+                0 0 30px #323232,
+                0 0 40px hsl(176.61, 42.28%, 40.7%) 19.6%;
+  }
+  
+  /* From Uiverse.io by SelfMadeSystem */ 
+/*
+More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
+ */
+
+.container {
+    position: absolute;
+    inset: 0;
+  }
+  
+  .container::before {
+    content: "";
+    position: absolute;
+    inset: -145%;
+    rotate: -45deg;
+    background: #000;
+    background-image: radial-gradient(4px 100px at 0px 235px, #0f0, #0000),
+      radial-gradient(4px 100px at 300px 235px, #0f0, #0000),
+      radial-gradient(1.5px 1.5px at 150px 117.5px, #0f0 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 252px, #0f0, #0000),
+      radial-gradient(4px 100px at 300px 252px, #0f0, #0000),
+      radial-gradient(1.5px 1.5px at 150px 126px, #0f0 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 150px, #0f0, #0000),
+      radial-gradient(4px 100px at 300px 150px, #0f0, #0000),
+      radial-gradient(1.5px 1.5px at 150px 75px, #0f0 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 253px, #0f0, #0000),
+      radial-gradient(4px 100px at 300px 253px, #0f0, #0000),
+      radial-gradient(1.5px 1.5px at 150px 126.5px, #0f0 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 204px, #0f0, #0000),
+      radial-gradient(4px 100px at 300px 204px, #0f0, #0000),
+      radial-gradient(1.5px 1.5px at 150px 102px, #0f0 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 134px, #0f0, #0000),
+      radial-gradient(4px 100px at 300px 134px, #0f0, #0000),
+      radial-gradient(1.5px 1.5px at 150px 67px, #0f0 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 179px, #0f0, #0000),
+      radial-gradient(4px 100px at 300px 179px, #0f0, #0000),
+      radial-gradient(1.5px 1.5px at 150px 89.5px, #0f0 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 299px, #0f0, #0000),
+      radial-gradient(4px 100px at 300px 299px, #0f0, #0000),
+      radial-gradient(1.5px 1.5px at 150px 149.5px, #0f0 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 215px, #0f0, #0000),
+      radial-gradient(4px 100px at 300px 215px, #0f0, #0000),
+      radial-gradient(1.5px 1.5px at 150px 107.5px, #0f0 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 281px, #0f0, #0000),
+      radial-gradient(4px 100px at 300px 281px, #0f0, #0000),
+      radial-gradient(1.5px 1.5px at 150px 140.5px, #0f0 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 158px, #0f0, #0000),
+      radial-gradient(4px 100px at 300px 158px, #0f0, #0000),
+      radial-gradient(1.5px 1.5px at 150px 79px, #0f0 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 210px, #0f0, #0000),
+      radial-gradient(4px 100px at 300px 210px, #0f0, #0000),
+      radial-gradient(1.5px 1.5px at 150px 105px, #0f0 100%, #0000 150%);
+    background-size:
+      300px 235px,
+      300px 235px,
+      300px 235px,
+      300px 252px,
+      300px 252px,
+      300px 252px,
+      300px 150px,
+      300px 150px,
+      300px 150px,
+      300px 253px,
+      300px 253px,
+      300px 253px,
+      300px 204px,
+      300px 204px,
+      300px 204px,
+      300px 134px,
+      300px 134px,
+      300px 134px,
+      300px 179px,
+      300px 179px,
+      300px 179px,
+      300px 299px,
+      300px 299px,
+      300px 299px,
+      300px 215px,
+      300px 215px,
+      300px 215px,
+      300px 281px,
+      300px 281px,
+      300px 281px,
+      300px 158px,
+      300px 158px,
+      300px 158px,
+      300px 210px,
+      300px 210px,
+      300px 210px;
+    animation: hi 150s linear infinite;
+  }
+  
+  @keyframes hi {
+    0% {
+      background-position:
+        0px 220px,
+        3px 220px,
+        151.5px 337.5px,
+        25px 24px,
+        28px 24px,
+        176.5px 150px,
+        50px 16px,
+        53px 16px,
+        201.5px 91px,
+        75px 224px,
+        78px 224px,
+        226.5px 350.5px,
+        100px 19px,
+        103px 19px,
+        251.5px 121px,
+        125px 120px,
+        128px 120px,
+        276.5px 187px,
+        150px 31px,
+        153px 31px,
+        301.5px 120.5px,
+        175px 235px,
+        178px 235px,
+        326.5px 384.5px,
+        200px 121px,
+        203px 121px,
+        351.5px 228.5px,
+        225px 224px,
+        228px 224px,
+        376.5px 364.5px,
+        250px 26px,
+        253px 26px,
+        401.5px 105px,
+        275px 75px,
+        278px 75px,
+        426.5px 180px;
+    }
+    to {
+      background-position:
+        0px 6800px,
+        3px 6800px,
+        151.5px 6917.5px,
+        25px 13632px,
+        28px 13632px,
+        176.5px 13758px,
+        50px 5416px,
+        53px 5416px,
+        201.5px 5491px,
+        75px 17175px,
+        78px 17175px,
+        226.5px 17301.5px,
+        100px 5119px,
+        103px 5119px,
+        251.5px 5221px,
+        125px 8428px,
+        128px 8428px,
+        276.5px 8495px,
+        150px 9876px,
+        153px 9876px,
+        301.5px 9965.5px,
+        175px 13391px,
+        178px 13391px,
+        326.5px 13540.5px,
+        200px 14741px,
+        203px 14741px,
+        351.5px 14848.5px,
+        225px 18770px,
+        228px 18770px,
+        376.5px 18910.5px,
+        250px 5082px,
+        253px 5082px,
+        401.5px 5161px,
+        275px 6375px,
+        278px 6375px,
+        426.5px 6480px;
+    }
+  }
+  
+  /* From Uiverse.io by SelfMadeSystem */ 
+.absolute {
+    position: absolute;
+  }
+  
+  .inline-block {
+    display: inline-block;
+  }
+  
+  .loader {
+    display: flex;
+    margin: 0.25em 0;
+    justify-content: center;
+  }
+  
+  .w-2 {
+    width: 0.5em;
+  }
+  
+  .dash {
+    animation: dashArray 2s ease-in-out infinite,
+      dashOffset 2s linear infinite;
+  }
+  
+  .spin {
+    animation: spinDashArray 2s ease-in-out infinite,
+      spin 8s ease-in-out infinite,
+      dashOffset 2s linear infinite;
+    transform-origin: center;
+  }
+  
+  @keyframes dashArray {
+    0% {
+      stroke-dasharray: 0 1 359 0;
+    }
+  
+    50% {
+      stroke-dasharray: 0 359 1 0;
+    }
+  
+    100% {
+      stroke-dasharray: 359 1 0 0;
+    }
+  }
+  
+  @keyframes spinDashArray {
+    0% {
+      stroke-dasharray: 270 90;
+    }
+  
+    50% {
+      stroke-dasharray: 0 360;
+    }
+  
+    100% {
+      stroke-dasharray: 270 90;
+    }
+  }
+  
+  @keyframes dashOffset {
+    0% {
+      stroke-dashoffset: 365;
+    }
+  
+    100% {
+      stroke-dashoffset: 5;
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      rotate: 0deg;
+    }
+  
+    12.5%,
+    25% {
+      rotate: 270deg;
+    }
+  
+    37.5%,
+    50% {
+      rotate: 540deg;
+    }
+  
+    62.5%,
+    75% {
+      rotate: 810deg;
+    }
+  
+    87.5%,
+    100% {
+      rotate: 1080deg;
+    }
+  }
+  
